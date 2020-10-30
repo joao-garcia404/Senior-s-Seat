@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+button,
+input,
+textarea {
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background: #28262E;
+}
+
+body {
+  -webkit-font-smoothing: antialiased !important;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Header*/
+
+header {
+  width: 100vw;
+  max-width: 1400px;
+  height: 100px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .nav {
+  width: 35%;
+}
+
+header .nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  font-size: 24px;
+  color: #FF9000;
+}
+
+/*Main*/
+
+main {
+  width: 100%;
+  max-width: 1000px;
+  height: 800px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main h2 {
+  width: 490px;
+
+  font-size: 50px;
+  color: white;
+}
+
+.quem-somos {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.quem-somos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quem-somos h2 {
+  color:  #FF9000;
+  font-size: 50px; 
+}
+
+.quem-somos p {
+  width: 700px;
+
+  background-color: #3E3B47;
+  border-radius: 40px;
+  padding: 40px;
+
+  font-size: 25px;
+  color: white;
+  text-align: justify;
+}
+
+.product {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+.product h2 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+.product .project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 150px;
+}
+
+.product .project p {
+  width: 560px;
+  background: #3E3B47;
+  border-radius: 40px;
+  padding: 40px;
+
+  font-size: 25px;
+  text-align: justify;
+  color: white;
+}
+
+.product .project img { 
+  width: 480;
+  height: 350;
+  border-radius: 20px;
+}
+
+.contact { 
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  margin-top: 200px;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 50px;
+  color: #FF9000;
+}
+
+.contact .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 80px;
+}
+
+.contact .icons img {
+  width: 180px;
+  height: 180px; 
+}
+
+footer {
+  width: 100%;
+  margin-top: 150px;
+  background: #3E3B47;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer span {
+  margin-top: 20px;
+  color: white;
+  font-size: 32px;
+}
+
+footer img {
+  margin-top: 20px;
+}
+
+@media (max-width: 1000px) {
+  .logo img{
+    margin-top: 25px;
+  }
+
+  header .nav{
+    display: none;
+  }
+
+  header {
+    width: 100vw;
+    max-width: 1400px;
+    height: 100px;
+    margin: 0 auto;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main {
+    width: 100%;
+    max-width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+    margin-top: -20px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  main h2 {
+    width: 300px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  main img {
+    margin-top: 30px;
+    width: 300px;
+  }
+
+  .quem-somos {
+    flex-direction: column;
+  }
+
+  .quem-somos h2 {
+    font-size: 35px;
+  }
+
+  .quem-somos p {
+    width: 300px;
+    margin-top: 30px;
+  
+    background-color: #3E3B47;
+    border-radius: 40px;
+    padding: 30px;
+  
+    font-size: 22px;
+    color: white;
+    text-align: justify;
+  }
+
+  .product {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 200px;
+  }
+  
+  .product h2 {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  .product .project {
+    flex-direction: column;
+  }
+  
+  .product .project p {
+    width: 300px;
+    background: #3E3B47;
+    border-radius: 40px;
+    padding: 20px;
+    margin-top: 50px;
+  
+    font-size: 22px;
+    text-align: justify;
+    color: white;
+  }
+  
+  .product .project img { 
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    margin-top: -30px;
+  }
+  
+  .contact h2{
+    font-size: 35px
+  }
+
+  .icons{
+    flex-direction: column;
+  }
+
+  .icons a {
+    margin-bottom: 40px;
+  }
+
+  .icons a img{
+    width: 30px;
+    height: 200px;
+  }
+
+  footer span{
+    font-size: 20px;
+    text-align: center;
+  }
+
+}
